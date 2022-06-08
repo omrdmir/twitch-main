@@ -1,0 +1,698 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+input,
+select,
+textarea,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+div {
+    header {
+        box-shadow: 0 1px 2px #00000026, 0 0px 2px #0000001a;
+        // position: sticky;
+        // top: 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffffff;
+        .main {
+            width: 1349;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            a {
+                img {
+                    cursor: pointer;
+                    width: 24px;
+                    height: 22px;
+                    padding-left: 25px;
+                }
+                &:not(:last-child) {
+                    img {
+                        padding-left: 15px;
+                        height: 24px;
+                        width: 24px;
+                        padding-right: 25px;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #5c16c5;
+                }
+            }
+        }
+        .center {
+            padding-left: 110px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input {
+                width: 333px;
+                height: 24px;
+                border: 1px solid;
+                border-color: #0000001a;
+                color: #0e0e10;
+                background-color: #0000001a;
+                border-radius: 6px 0 0 6px;
+                font-size: 15px;
+                padding: 5px 10px;
+            }
+            a {
+                padding: 1px;
+                button {
+                    cursor: pointer;
+                    height: 36px;
+                    width: 34px;
+                    background-color: #0000000d;
+                    color: #0e0e10;
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                    svg {
+                        height: 24px;
+                        width: 24px;
+                    }
+                    &:hover {
+                        background-color: #0000001a;
+                    }
+                }
+            }
+        }
+        .right {
+            padding-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                padding-left: 5px;
+                &:not(:last-child) {
+                    padding-left: 0;
+                }
+                .best {
+                    width: 88px;
+                    height: 30px;
+                    margin: 10px;
+                    background-color: #e5e5e5;
+                }
+                .best-purple {
+                    width: 66px;
+                    height: 30px;
+                    background-color: #772ce8;
+                }
+                button {
+                    width: 30px;
+                    position: relative;
+                    height: 30px;
+                    background-color: #00000000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 5px;
+                    .black {
+                        color: #353537;
+                    }
+                    p {
+                        position: absolute;
+                        padding: 5px;
+                        color: #faf7ff;
+                    }
+                    svg {
+                        height: 20px;
+                        width: 20px;
+                    }
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .flex-yardim {
+        display: flex;
+        .sidebar-menu {
+            // position: sticky;
+            width: 240px;
+            height: 600px;
+            overflow: auto;
+            scroll-behavior: smooth;
+            .kenarlik {
+                
+                width: 230px;
+                background-color: #efeff1;
+                .top {
+                    display: flex;
+                    align-items: center;
+                    padding-top: 10px;
+                    h2 {
+                        font-size: 13px;
+                        width: 220px;
+                        height: 16px;
+                        font-weight: 600;
+                        padding: 10px;
+                    }
+                    button {
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 10px;
+                        svg {
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+                }
+                .site {
+                    margin: 10px 10px 0 10px;
+                    width: 210px;
+                    height: auto;
+                    font-family: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    
+                    .channel {
+                        width: auto;
+                        padding-bottom: 20px;
+                        .blok {
+                            .first-channel {
+                                display: flex;
+                                margin-top: 10px;
+                              
+                                a{ 
+                                    width: 220px;
+                                    align-items: center;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    .ima1 {
+                                        img {
+                                            width: 30px;
+                                            height: 30px;
+                                            border-radius: 50%;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                        }
+                                    }
+                                    .all-justify {
+                                        display: flex;
+                                        width: 100%;
+                                        justify-content: space-between;
+                                        .all-tanitim {
+                                            margin-left: 10px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            .tanitim {
+                                                margin-bottom: 4px;
+                                                p {
+                                                    font-size: 16px;
+                                                    color: #1f1f29;
+                                                }
+                                            }
+                                            .alt-baslik {
+                                                p {
+                                                    font-size: 12px;
+                                                    color: #53535f;
+                                                }
+                                            }
+                                        }
+                                        .count {
+                                            display: flex;
+                                            .dot {
+                                                width: 8px;
+                                                height: 8px;
+                                                border-radius: 50%;
+                                                background-color: red;
+                                                display: flex;
+                                                align-self: center;
+                                            }
+                                            .sayi {
+                                                font-size: 15px;
+                                                color: #1f1f23;
+                                                display: flex;
+                                                align-self: center;
+                                                margin-left: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .top-2 {
+                    display: flex;
+                    align-items: center;
+                    h2 {
+                        font-size: 13px;
+                        width: 220px;
+                        height: 16px;
+                        font-weight: 600;
+                        padding: 10px;
+                    }
+                }
+                .site-2{
+                    margin: 10px 10px 0 10px;
+                    width: 210px;
+                    height: auto;
+                    font-family: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    .channel-2 {
+                        width: auto;
+                        padding-bottom: 20px;
+                        .blok-2 {
+                            padding-top: 5px;
+                            .second-channel {
+                                display: flex;
+                                margin-top: 10px;
+                                a{width: 220px;
+                                    align-items: center;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    .ima1 {
+                                        img {
+                                            width: 30px;
+                                            height: 30px;
+                                            border-radius: 50%;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                        }
+                                    }
+
+                                    .all-justify {
+                                        display: flex;
+                                        width: 100%;
+                                        justify-content: space-between;
+                                        .all-tanitim {
+                                            margin-left: 10px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            .tanitim {
+                                                margin-bottom: 4px;
+                                                p {
+                                                    font-size: 16px;
+                                                    color: #1f1f29;
+                                                }
+                                            }
+                                            .alt-baslik {
+                                                p {
+                                                    font-size: 12px;
+                                                    color: #53535f;
+                                                }
+                                            }
+                                        }
+                                        .count {
+                                            display: flex;
+                                            .dot {
+                                                width: 8px;
+                                                height: 8px;
+                                                border-radius: 50%;
+                                                background-color: red;
+                                                display: flex;
+                                                align-self: center;
+                                            }
+                                            .sayi {
+                                                font-size: 15px;
+                                                color: #1f1f23;
+                                                display: flex;
+                                                align-self: center;
+                                                margin-left: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .more {
+                    padding-left: 10px;
+                    width: 213px;
+                    height: 32px;
+                    display: block;
+                    margin-top: -10px;
+                    margin-bottom: -10px;
+                    button {
+                        width: 120px;
+                        height: 22px;
+                        text-decoration: none;
+                        color: #5c16c5;
+                        span {
+                            display: flex;
+                            justify-content: start;
+                            font-size: 13px;
+                            font-weight: lighter;
+                        }
+                    }
+                }
+            }
+        }
+        .ana {
+            overflow-y: auto;
+            flex: 1;
+            height: calc(100vh - 50px);
+            .content {
+                h1 {
+                    font-family: "Roobert", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    font-size: 54px;
+                    font-weight: bold;
+                    padding: 30px;
+                }
+            }
+            .mor-ofis{
+                nav {
+                    .gözat {
+                        display: flex;
+                        a{
+                          margin-left: 10px;
+                          &:first-child{
+                            margin-left: 30px;
+                          }
+                          li {
+                              width: 200px;
+                              height: 45px;
+                              border-radius: 6px;
+                              background-color: #6b28d0;
+                              display: flex;
+                              align-items: center;
+                              justify-content: space-between;
+                              p {
+                                  padding-left: 15px;
+                                  font-size: 24px;
+                                  line-height: 22px;
+                                  color: #fff;
+                                  font-weight: 700;
+                              }
+                              img {
+                                  padding-right: 10px;
+                              }
+                          }
+                        }
+                    }
+                    
+                    .gözat-2 {
+                      display: flex;
+                      padding-top: 10px;
+                    a{
+                      display: block;
+                      .category{
+                        margin: 40px 30px 30px 30px;
+                      }
+                      .active{
+                        p{
+                          color: #5C16C5;
+                        }
+                      }
+                      li{
+                        margin: 40px 30px 40px 0;
+                        align-self: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                      p {
+                          color: black;
+                          font-size: 18px;
+                          font-family: "Roobert","Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+                          font-weight: 600;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                        }
+                      }
+                    }
+                  }
+                  .slash{
+                    background-color: #5c16c5;
+                    height: 2px;
+                    width: 95px;
+                    margin-top: -30px;
+                    margin-left: 30px;
+                  }
+                }
+            }
+           .filtre{
+            margin-left: 30px;
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+             .left-side{
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               label{
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                font-size: 15px;
+                cursor: default;
+                font-weight: 600;
+               }
+               .flexible{
+                 padding-left: 10px;
+                 div{
+                   display: flex;
+                   position: relative;
+                   align-items: center;
+                   svg{
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    padding-left: 5px;
+                    fill: #64646F;
+                   }
+                input{
+                  border-radius: 4px;
+                  padding-left: 25px;
+                  display: block;
+                  width: 100%;
+                  border: 1px solid #0000001a;
+                  line-height: 1.5;
+                  color: #0e0e10;
+                  background-color: #0000001a;
+                  &::placeholder{
+                    font-size: 13.5px;
+                  }
+               }
+              }
+              }
+             }
+             .right-side{
+               padding-right: 40px;
+              display: flex;
+              align-items: center;
+                 label{
+                  font-size: 15px;
+                  cursor: default;
+                  font-weight: 600;
+                 }
+               button{
+                margin-left: 10px;
+                height: 30px;
+                border: 1px solid #0000001a;
+                display: flex;
+                align-items: center;
+                border-radius: 4px;
+                 div{
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   p{
+                     display: flex;
+                     justify-content: center;
+                    font-size: 16px;
+                    padding: 0 8px 0 10px;
+                    line-height: 1.5;
+                   }
+                   svg{
+                    width: 20px;
+                    height: 20px;
+                   }
+                 }
+               }
+             }
+           } 
+           nav{
+             ul{
+               display: flex;
+               li{
+                 .poster-all{
+                  margin-left: 30px;
+                  padding-top: 25px;
+                  margin-right: -20px;
+                   .first-just{
+                     display: flex;
+                     flex-direction: column;
+                     a{
+                       display: block;
+                      img{
+                        width: 200px;
+                        height: 273px;
+                      }
+                       p{
+                         padding-top: 10px;
+                         color: black;
+                         font-size: 14px;
+                         font-weight: bold;
+                       }
+                     }
+                   }
+                   .second-just{
+                     display: flex;
+                     flex-direction: column;
+                     .watcher{
+                       a{
+                         p{
+                           padding-top: 5px;
+                           color: #53535f;
+                         }
+                       }
+                     }
+                     .kind{
+                       padding-top: 10px;
+                       button{
+                        border: 1px solid #0000001a;
+                        border-radius: 20px;
+                        background-color: #0000001a;
+                        color: #0e0e10;
+                         p{
+                          font-size: 13px;
+                          padding: 2px 7px 2px 7px;
+                         }
+                       }
+                     }
+                   }
+                 }
+               }
+             }
+           }
+        }
+    }
+}

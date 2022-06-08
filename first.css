@@ -1,0 +1,677 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+input,
+select,
+textarea,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+div header {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1490196078), 0 0px 2px rgba(0, 0, 0, 0.1019607843);
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+div header .main {
+  width: 1349;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+div header .main a img {
+  cursor: pointer;
+  width: 24px;
+  height: 22px;
+  padding-left: 25px;
+}
+div header .main a:not(:last-child) img {
+  padding-left: 15px;
+  height: 24px;
+  width: 24px;
+  padding-right: 25px;
+}
+div header .main a p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5c16c5;
+}
+div header .center {
+  padding-left: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div header .center input {
+  width: 333px;
+  height: 24px;
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.1019607843);
+  color: #0e0e10;
+  background-color: rgba(0, 0, 0, 0.1019607843);
+  border-radius: 6px 0 0 6px;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+div header .center a {
+  padding: 1px;
+}
+div header .center a button {
+  cursor: pointer;
+  height: 36px;
+  width: 34px;
+  background-color: rgba(0, 0, 0, 0.0509803922);
+  color: #0e0e10;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+div header .center a button svg {
+  height: 24px;
+  width: 24px;
+}
+div header .center a button:hover {
+  background-color: rgba(0, 0, 0, 0.1019607843);
+}
+div header .right {
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div header .right a {
+  padding-left: 5px;
+}
+div header .right a:not(:last-child) {
+  padding-left: 0;
+}
+div header .right a .best {
+  width: 88px;
+  height: 30px;
+  margin: 10px;
+  background-color: #e5e5e5;
+}
+div header .right a .best-purple {
+  width: 66px;
+  height: 30px;
+  background-color: #772ce8;
+}
+div header .right a button {
+  width: 30px;
+  position: relative;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+div header .right a button .black {
+  color: #353537;
+}
+div header .right a button p {
+  position: absolute;
+  padding: 5px;
+  color: #faf7ff;
+}
+div header .right a button svg {
+  height: 20px;
+  width: 20px;
+}
+div header .right a button img {
+  width: 20px;
+  height: 20px;
+}
+div .flex-yardim {
+  display: flex;
+}
+div .flex-yardim .sidebar-menu {
+  width: 240px;
+  height: 600px;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+div .flex-yardim .sidebar-menu .kenarlik {
+  width: 230px;
+  background-color: #efeff1;
+}
+div .flex-yardim .sidebar-menu .kenarlik .top {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+div .flex-yardim .sidebar-menu .kenarlik .top h2 {
+  font-size: 13px;
+  width: 220px;
+  height: 16px;
+  font-weight: 600;
+  padding: 10px;
+}
+div .flex-yardim .sidebar-menu .kenarlik .top button {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+div .flex-yardim .sidebar-menu .kenarlik .top button svg {
+  height: 20px;
+  width: 20px;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site {
+  margin: 10px 10px 0 10px;
+  width: 210px;
+  height: auto;
+  font-family: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site .channel {
+  width: auto;
+  padding-bottom: 20px;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site .channel .blok .first-channel {
+  display: flex;
+  margin-top: 10px;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site .channel .blok .first-channel a {
+  width: 220px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site .channel .blok .first-channel a .ima1 img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site .channel .blok .first-channel a .all-justify {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site .channel .blok .first-channel a .all-justify .all-tanitim {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site .channel .blok .first-channel a .all-justify .all-tanitim .tanitim {
+  margin-bottom: 4px;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site .channel .blok .first-channel a .all-justify .all-tanitim .tanitim p {
+  font-size: 16px;
+  color: #1f1f29;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site .channel .blok .first-channel a .all-justify .all-tanitim .alt-baslik p {
+  font-size: 12px;
+  color: #53535f;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site .channel .blok .first-channel a .all-justify .count {
+  display: flex;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site .channel .blok .first-channel a .all-justify .count .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  align-self: center;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site .channel .blok .first-channel a .all-justify .count .sayi {
+  font-size: 15px;
+  color: #1f1f23;
+  display: flex;
+  align-self: center;
+  margin-left: 5px;
+}
+div .flex-yardim .sidebar-menu .kenarlik .top-2 {
+  display: flex;
+  align-items: center;
+}
+div .flex-yardim .sidebar-menu .kenarlik .top-2 h2 {
+  font-size: 13px;
+  width: 220px;
+  height: 16px;
+  font-weight: 600;
+  padding: 10px;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site-2 {
+  margin: 10px 10px 0 10px;
+  width: 210px;
+  height: auto;
+  font-family: "Inter", "Roobert", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site-2 .channel-2 {
+  width: auto;
+  padding-bottom: 20px;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site-2 .channel-2 .blok-2 {
+  padding-top: 5px;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site-2 .channel-2 .blok-2 .second-channel {
+  display: flex;
+  margin-top: 10px;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site-2 .channel-2 .blok-2 .second-channel a {
+  width: 220px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site-2 .channel-2 .blok-2 .second-channel a .ima1 img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site-2 .channel-2 .blok-2 .second-channel a .all-justify {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site-2 .channel-2 .blok-2 .second-channel a .all-justify .all-tanitim {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site-2 .channel-2 .blok-2 .second-channel a .all-justify .all-tanitim .tanitim {
+  margin-bottom: 4px;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site-2 .channel-2 .blok-2 .second-channel a .all-justify .all-tanitim .tanitim p {
+  font-size: 16px;
+  color: #1f1f29;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site-2 .channel-2 .blok-2 .second-channel a .all-justify .all-tanitim .alt-baslik p {
+  font-size: 12px;
+  color: #53535f;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site-2 .channel-2 .blok-2 .second-channel a .all-justify .count {
+  display: flex;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site-2 .channel-2 .blok-2 .second-channel a .all-justify .count .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  align-self: center;
+}
+div .flex-yardim .sidebar-menu .kenarlik .site-2 .channel-2 .blok-2 .second-channel a .all-justify .count .sayi {
+  font-size: 15px;
+  color: #1f1f23;
+  display: flex;
+  align-self: center;
+  margin-left: 5px;
+}
+div .flex-yardim .sidebar-menu .kenarlik .more {
+  padding-left: 10px;
+  width: 213px;
+  height: 32px;
+  display: block;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+div .flex-yardim .sidebar-menu .kenarlik .more button {
+  width: 120px;
+  height: 22px;
+  text-decoration: none;
+  color: #5c16c5;
+}
+div .flex-yardim .sidebar-menu .kenarlik .more button span {
+  display: flex;
+  justify-content: start;
+  font-size: 13px;
+  font-weight: lighter;
+}
+div .flex-yardim .ana {
+  overflow-y: auto;
+  flex: 1;
+  height: calc(100vh - 50px);
+}
+div .flex-yardim .ana .content h1 {
+  font-family: "Roobert", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 54px;
+  font-weight: bold;
+  padding: 30px;
+}
+div .flex-yardim .ana .mor-ofis nav .gözat {
+  display: flex;
+}
+div .flex-yardim .ana .mor-ofis nav .gözat a {
+  margin-left: 10px;
+}
+div .flex-yardim .ana .mor-ofis nav .gözat a:first-child {
+  margin-left: 30px;
+}
+div .flex-yardim .ana .mor-ofis nav .gözat a li {
+  width: 200px;
+  height: 45px;
+  border-radius: 6px;
+  background-color: #6b28d0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div .flex-yardim .ana .mor-ofis nav .gözat a li p {
+  padding-left: 15px;
+  font-size: 24px;
+  line-height: 22px;
+  color: #fff;
+  font-weight: 700;
+}
+div .flex-yardim .ana .mor-ofis nav .gözat a li img {
+  padding-right: 10px;
+}
+div .flex-yardim .ana .mor-ofis nav .gözat-2 {
+  display: flex;
+  padding-top: 10px;
+}
+div .flex-yardim .ana .mor-ofis nav .gözat-2 a {
+  display: block;
+}
+div .flex-yardim .ana .mor-ofis nav .gözat-2 a .category {
+  margin: 40px 30px 30px 30px;
+}
+div .flex-yardim .ana .mor-ofis nav .gözat-2 a .active p {
+  color: #5C16C5;
+}
+div .flex-yardim .ana .mor-ofis nav .gözat-2 a li {
+  margin: 40px 30px 40px 0;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div .flex-yardim .ana .mor-ofis nav .gözat-2 a li p {
+  color: black;
+  font-size: 18px;
+  font-family: "Roobert", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div .flex-yardim .ana .mor-ofis nav .slash {
+  background-color: #5c16c5;
+  height: 2px;
+  width: 95px;
+  margin-top: -30px;
+  margin-left: 30px;
+}
+div .flex-yardim .ana .filtre {
+  margin-left: 30px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div .flex-yardim .ana .filtre .left-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div .flex-yardim .ana .filtre .left-side label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  cursor: default;
+  font-weight: 600;
+}
+div .flex-yardim .ana .filtre .left-side .flexible {
+  padding-left: 10px;
+}
+div .flex-yardim .ana .filtre .left-side .flexible div {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+div .flex-yardim .ana .filtre .left-side .flexible div svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding-left: 5px;
+  fill: #64646F;
+}
+div .flex-yardim .ana .filtre .left-side .flexible div input {
+  border-radius: 4px;
+  padding-left: 25px;
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  line-height: 1.5;
+  color: #0e0e10;
+  background-color: rgba(0, 0, 0, 0.1019607843);
+}
+div .flex-yardim .ana .filtre .left-side .flexible div input::-moz-placeholder {
+  font-size: 13.5px;
+}
+div .flex-yardim .ana .filtre .left-side .flexible div input:-ms-input-placeholder {
+  font-size: 13.5px;
+}
+div .flex-yardim .ana .filtre .left-side .flexible div input::placeholder {
+  font-size: 13.5px;
+}
+div .flex-yardim .ana .filtre .right-side {
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+}
+div .flex-yardim .ana .filtre .right-side label {
+  font-size: 15px;
+  cursor: default;
+  font-weight: 600;
+}
+div .flex-yardim .ana .filtre .right-side button {
+  margin-left: 10px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+div .flex-yardim .ana .filtre .right-side button div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div .flex-yardim .ana .filtre .right-side button div p {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0 8px 0 10px;
+  line-height: 1.5;
+}
+div .flex-yardim .ana .filtre .right-side button div svg {
+  width: 20px;
+  height: 20px;
+}
+div .flex-yardim .ana nav ul {
+  display: flex;
+}
+div .flex-yardim .ana nav ul li .poster-all {
+  margin-left: 30px;
+  padding-top: 25px;
+  margin-right: -20px;
+}
+div .flex-yardim .ana nav ul li .poster-all .first-just {
+  display: flex;
+  flex-direction: column;
+}
+div .flex-yardim .ana nav ul li .poster-all .first-just a {
+  display: block;
+}
+div .flex-yardim .ana nav ul li .poster-all .first-just a img {
+  width: 200px;
+  height: 273px;
+}
+div .flex-yardim .ana nav ul li .poster-all .first-just a p {
+  padding-top: 10px;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+div .flex-yardim .ana nav ul li .poster-all .second-just {
+  display: flex;
+  flex-direction: column;
+}
+div .flex-yardim .ana nav ul li .poster-all .second-just .watcher a p {
+  padding-top: 5px;
+  color: #53535f;
+}
+div .flex-yardim .ana nav ul li .poster-all .second-just .kind {
+  padding-top: 10px;
+}
+div .flex-yardim .ana nav ul li .poster-all .second-just .kind button {
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1019607843);
+  color: #0e0e10;
+}
+div .flex-yardim .ana nav ul li .poster-all .second-just .kind button p {
+  font-size: 13px;
+  padding: 2px 7px 2px 7px;
+}/*# sourceMappingURL=first.css.map */
